@@ -455,6 +455,8 @@ p {
 }
 #contact .contact-items {
   width: 400px;
+  position: relative;
+  left: 10px;
 }
 #contact .contact-item {
   width: 80%;
