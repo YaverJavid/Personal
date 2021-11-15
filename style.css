@@ -1,4 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+:root{
+   --c:crimson;
+}
 * {
   padding: 0;
   margin: 0;
@@ -42,7 +45,7 @@ p {
   text-align: center;
 }
 .section-title span {
-  color: crimson;
+  color:var(--c)
 }
 
 .cta {
@@ -50,7 +53,7 @@ p {
   padding: 10px 30px;
   color: white;
   background-color: transparent;
-  border: 2px solid crimson;
+  border: 2px solid var(--c);
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -60,7 +63,7 @@ p {
 }
 .cta:hover {
   color: white;
-  background-color: crimson;
+  background-color: var(--c);
 }
 .brand h1 {
   font-size: 3rem;
@@ -68,7 +71,7 @@ p {
   color: white;
 }
 .brand h1 span {
-  color: crimson;
+  color: var(--c);
 }
 
 /* Header section */
@@ -140,7 +143,7 @@ p {
   letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-  color: crimson;
+  color: var(--c)
 }
 #header .hamburger {
   height: 60px;
@@ -291,7 +294,6 @@ p {
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background-image: url(./img/img-1.png);
   background-size: cover;
   margin: 10px 5%;
   position: relative;
