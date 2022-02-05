@@ -1,0 +1,230 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+:root {
+  --themeColor: #0C0A3E;
+  --themeTextColor: #F9564F;
+}
+
+.highlighted-text {
+  color: var(--themeTextColor)
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 12pt
+}
+
+#top {
+  width: 100%;
+  height: 10vh;
+  background: var(--themeColor);
+}
+
+#top>h1 {
+  text-align: center;
+  position: relative;
+  top: 3vh;
+  color: white;
+  left: 13vh;
+  width: 30vh;
+  margin-top: 0;
+}
+
+.hamburger-icon {
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  background-image: url('images/menu_black_24dp (1).svg');
+  background-size: 100% 100%;
+  left: 4vh;
+  top: 3.2vh;
+  z-index: 2;
+}
+
+#hero {
+  background: var(--themeColor);
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 15%;
+
+}
+
+#hero>h1 {
+  color: white;
+  margin: auto;
+  margin-left: 5vh;
+  padding: 1vh;
+
+
+}
+
+#hero>.ist-child {
+  margin-top: 20vh;
+}
+
+.button {
+  color: white;
+  height: 4vh;
+  border: 0.3vh solid var(--themeTextColor);
+  text-align: center;
+  margin: 5vh 5vh 0 5vh;
+  padding:2vh;
+  cursor: pointer;
+  transition: ease-in 200ms;
+  font-size: 3vh;
+  width:16vh;
+}
+
+.button:hover {
+  background: var(--themeTextColor);
+}
+
+.tab,
+.projects-tab {
+  width: 80%;
+  margin: 0 0 10% 6%;
+  border-radius: 1vh;
+  background-color: var(--themeColor);
+  padding: 2vh;
+  color: white;
+
+  /*  box-shadow: 0 8px 50px #0C0A3Ef0*/
+
+
+}
+
+.tab-illustration {
+  width: 10vh;
+  height: 10vh;
+  background-size: 100% 100%;
+}
+
+#projects>h1 {
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 10vh;
+}
+
+.tab-slogan {
+  opacity: 80%;
+  margin: 0;
+}
+
+#about-me {
+  text-align: center;
+}
+
+#about-me>h1 {
+  margin-bottom: -2vh;
+}
+
+#about-me>h3,
+.about-me-content {
+  font-weight: 100;
+
+}
+
+.jump-to-top {
+  color: black;
+  margin: auto;
+  width: 50%;
+  font-size: 3.5vh;
+  margin-bottom: 30vh
+}
+
+#contacts>h1 {
+  text-align: center;
+  margin-bottom: 10vh
+}
+
+.contact-tab {
+  color: black;
+  background: white;
+  text-align: center;
+  box-shadow: 0 0 4vh 0 #0000002c;
+  transition: 200ms
+}
+
+.contact-tab>div {
+  margin: auto;
+  font-size: 3.5vh;
+}
+
+.contact-tab:hover {
+  box-shadow: 0 0 1vh 0 #0000002c;
+}
+
+.contact-tab>* {
+  margin: 1vh;
+}
+
+.contact-tab-title {
+  font-weight: 100
+}
+
+#footer {
+  text-align: center;
+  color: white;
+  background: var(--themeColor);
+  padding: 2vh;
+
+}
+
+#footer>h1 {
+  margin-bottom: 2vh;
+}
+
+.social-icons {
+  height: 9vh;
+  filter: grayscale(1)
+}
+
+.social-icons:hover {
+  filter: grayscale(0);
+}
+
+#menu {
+  height: 200vw;
+  width: 0;
+  background-color: #303033;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.open {
+  animation-name: open;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+#menu>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#menu>div>nav>a{
+  color:white;
+  text-decoration: none;
+  margin:10vh;
+  font-size:5vh;
+}
