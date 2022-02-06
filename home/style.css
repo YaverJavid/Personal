@@ -228,3 +228,8 @@ html {
   margin:10vh;
   font-size:5vh;
 }
+@media only screen and (min-width: 768px) {
+  #top>h1{
+    font-size: 4vh
+  }
+}
