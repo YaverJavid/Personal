@@ -189,7 +189,9 @@ html {
 .social-icons:hover {
   filter: grayscale(0);
 }
-
+#footer>a {
+  color: white;
+}
 #menu {
   height: 200vw;
   width: 0;
