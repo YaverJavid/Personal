@@ -11,11 +11,75 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="top">
-  <img src="cover.png" class="cover">
-  <img src="logo.png" class="dp">
+    <img src="cover.png" class="cover">
+    <img src="logo.png" class="dp">
   </div>
+  <div class="recents">
+    <div class="recent-posts">
+      <h2 class="title">Recent Posts</h2>
+      <div class="post-profile">
+        <img src="logo.png" class="posts-dp">
+        <div class="post-profile-textbox">
+          <h4 class="posts-name">Ahlul-Islam</h4>
+          <span class="date">14/04/2022</span>
+        </div>
+      </div>
+      <img src="post.png" alt="Post1" class="post-pic">
+      <div class="post-profile">
+        <img src="logo.png" class="posts-dp">
+        <div class="post-profile-textbox">
+          <h4 class="posts-name">Ahlul-Islam</h4>
+          <span class="date">14/04/2022</span>
+        </div>
+      </div>
+      <img src="0.png" alt="Post1" class="post-pic">
+    </div>
+    <div class="recent-pics">
+      <h2 class="title">Recent Pictures</h2>
+      <div class="post-profile">
+        <img src="logo.png" class="posts-dp">
+        <div class="post-profile-textbox">
+          <h4 class="posts-name">Ahlul-Islam</h4>
+          <span class="date">14/04/2022</span>
+        </div>
+      </div>
+      <img src="post.png" alt="Post1" class="post-pic">
+      <div class="post-profile">
+        <img src="logo.png" class="posts-dp">
+        <div class="post-profile-textbox">
+          <h4 class="posts-name">Ahlul-Islam</h4>
+          <span class="date">14/04/2022</span>
+        </div>
+      </div>
+      <img src="0.png" alt="Post1" class="post-pic">
+    </div>
+    <div class="recent-videos">
+      <h2 class="title">Recent Videos</h2>
+      <h3 class="not-found">No Recent Videos 📽 😓<h3>️
+    </div>
+    <div class="recent-events">
+      <h2 class="title">Recent Events</h2>
+      <div class="post-profile">
+        <img src="logo.png" class="posts-dp">
+        <div class="post-profile-textbox">
+          <h4 class="posts-name">Ahlul-Islam</h4>
+          <span class="date">14/04/2022</span>
+        </div>
+      </div>
+      ️<img src="event.png" class="post-pic" alt="Ramadan">
+    </div>
+  </div>
+      <img src="cover.png" class="cover">
+  <script>
+    document.getElementsByClassName('dp')[0].addEventListener('touchmove',function(e){
+    if(e.touches[0].clientX < 238 && e.touches[0].clientX> 0){
+      this.style.left = e.touches[0].clientX + 'px'
+      }
+      })
+  </script>
 </body>
 
 </html>
