@@ -1,15 +1,22 @@
 body {
-  font-size: 15pt;
+  font-size: 10pt;
   padding: 0;
   margin: 0;
-  
+  color: white;
+  padding-bottom: 0;
+  background: var(--accent);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+:root {
+  --accent: #171B26;
 }
 
 .top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
+  background: white;
+  height: 65vw
 }
 
 .cover {
@@ -23,5 +30,47 @@ body {
   align-self: center;
   border: 1vh solid whitesmoke;
   position: relative;
-  top: -6vh;
+  top: 20vh;
+  position: absolute;
 }
+
+.post-pic {
+  width: 88%;
+  margin: 5%;
+  border: 0.3vh solid white;
+  margin-bottom: 8vh
+
+}
+
+.title {
+  text-align: center;
+  font-size: 8vh;
+  color: #D6D79D
+}
+
+.not-found {
+  text-align: center;
+}
+
+.recents>div {
+}
+
+.post-profile {
+  display: flex;
+  gap: 10%;
+  padding-left: 5%;
+}
+
+.posts-dp {
+  width: 18%;
+  height: 17vw;
+  border-radius: 50vh;
+    border: 0.3vh solid white;
+}
+
+.posts-name {
+  margin: 0;
+  margin-bottom: 3vh;
+}
+
+.post-profile-textbox {}
